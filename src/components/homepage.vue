@@ -34,8 +34,58 @@
         </div>
 
         <div class="section-3">
-            Hi
+
+            <div class="whyMeteor">
+
+            
+            <div class="meteror-detail">
+                <h2>Why Meteor?</h2>
+                <img src="@/assets/Rectangle.svg" alt="">
+                <h3>Integrate Technologies you already use</h3>
+                <p>Use popular frameworks and tools, right out-of-the-box. Focus on building features instead of wiring disparate components together yourself.</p>
+
+
+                <h3>Build apps for any device</h3>
+                <p>Use the same code whether you’re developing for web, iOS, Android, or desktop. Hot push new code without app store approval or forcing users to download a new native app.</p>
+                
+                <h3>Ship more with less code</h3>
+                <p>Accomplish in 10 lines what would otherwise take 1,000, thanks to an integrated Javascript stack that extends from the database to the end user's screen.
+
+</p>
+            </div>
+
+            
+            </div>
+
+            <div class="meteror-img">
+                <img src="@/assets/why-meteor.svg" alt="">
+            </div>
+
+            
+            
+           
+
         </div>
+
+
+         <div class="integrate">
+                <h3>Meteor integrates with</h3>
+                <div class="integrate-partner">
+                    <img src="@/assets/React.svg" alt="">
+                    <img src="@/assets/Vue.svg" alt="">
+                    <img src="@/assets/Svelte.svg" alt="">
+                    <img src="@/assets/Angular.svg" alt="">
+                    <img src="@/assets/graph-ql.svg" alt="">
+                    <img src="@/assets/MongoDB.svg" alt="">
+                    <img src="@/assets/Cordova.svg" alt="">
+                    <img src="@/assets/npm.svg" alt="">
+
+                </div>
+            </div>
+
+
+        
+
 
     </div>
 </template>
@@ -46,6 +96,12 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto:wght@500&display=swap');
+*{
+    font-family: 'Inter' ;
+}
 .section-3{
     background-image: radial-gradient(circle farthest-corner at 50% 0,rgba(239,240,249,.4),rgba(241,242,250,.4) 23%,rgba(245,245,251,.4) 41.25%,rgba(249,250,253,.4) 58.75%,rgba(253,253,254,.4) 77.5%,hsla(0,0%,100%,.4));
     margin-top: 100px;
@@ -105,6 +161,10 @@ export default {
     height: inherit;
 }
 
+.integrate-partner{
+    display: flex;
+    justify-content: space-between
+}
 @keyframes fadeIn {
  0% {
   opacity:0
@@ -135,5 +195,67 @@ export default {
 .logos-container__row-2{
     position: absolute;
     animation-delay: 4s;
+}
+
+.section-3 {
+    display: flex;
+    padding: 30px 0px;
+    padding-left: 100px;
+}
+
+.whyMeteor{
+    width: 60%;
+    display: flex;
+}
+
+.meteror-detail {
+    max-width: 600px;
+    
+}
+
+.meteror-detail > h2{
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 0px;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+}
+
+.meteror-detail > img {
+    display: block;
+    margin-bottom: 40px;
+}
+.meteror-img > img{
+    height: 100%;
+    width: 100%;
+    margin-right: -100px;   
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+.meteror-detail > p{
+    max-width: 430px;
+    opacity: 0.4;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.integrate{
+    padding-left: 100px;
+    padding-right: 20px;
+    margin-bottom: 30px;
+}
+
+.integrate > h3 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: -0.3px;
+    font-family: 'Roboto';
 }
 </style>

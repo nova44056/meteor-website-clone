@@ -34,8 +34,7 @@ export default {
 .navbar{
   padding-left: 10px;
   padding-right: 10px;
-  display: flex;
-  justify-content: center;
+  
 }
 .homepage{
   height: 100%;
