@@ -1,33 +1,39 @@
 <template>
-    <div class="footer">
+    <div class="footer content-wrapper">
         <div class="row1">
-            <div>
-                <h2>Newsletter</h2>
+            <div class="top">
+                <h2>Join our newsletter</h2>
                 <p>Sign up to receive a monthly email on the latest Meteor</p>
                 <p>updates, features, and news!</p>
-                <br>
                 <h4>SUBSCRIBE NOW ></h4>
+                <br>
+                <hr>
+                <br>
             </div>
-            <hr />
             <div class="grey">
                 <img src="https://d14jjfgstdxsoz.cloudfront.net/assets/meteor-logo.svg" alt="">
                 <br>
                 <p>© 2020 Meteor Software</p>
-                <p>Open source downloads supported by <b>KeyCDN</b> and <b>StackPath</b></p>
+                <p>Open source downloads supported by <b style="color: #1b2448">KeyCDN</b> and <b style="color: #1b2448">StackPath</b></p>
                 <div class="sm">
                     <div class="twitter">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
                         <p>Twitter</p>
                     </div>
                     <div class="git">
+                        <i class="fa fa-github" aria-hidden="true"></i>
                         <p>Github</p>
                     </div>
                     <div class="youtube">
+                        <i class="fa fa-youtube-play" aria-hidden="true"></i>
                         <p>Youtube</p>
                     </div>
                     <div class="facebook">
-                        <p>facebook</p>
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <p>Facebook</p>
                     </div>
                     <div class="medium">
+                        <i class="fa fa-medium" aria-hidden="true"></i>
                         <p>Medium</p>
                     </div>
                 </div>
@@ -36,7 +42,6 @@
         <div class="row2">
             <div class="col">
                 <h3>DEVELOPERS</h3>
-                <br>
                 <p>Install</p>
                 <p>Tutorials</p>
                 <p>Guide</p>
@@ -51,13 +56,11 @@
             </div>
             <div class="col">
                 <h3>SOLUTIONS</h3>
-                <br>
                 <p>Hosting</p>
                 <p>Official Partners</p>
             </div>
             <div class="col">
                 <h3>COMPANY</h3>
-                <br>
                 <p>Careers</p>
                 <p>Culture</p>
                 <p>Blog</p>
@@ -74,30 +77,67 @@
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300&display=swap');
+
     .footer{
+        margin-top: 100px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-direction: row;
+        font-family: 'Inter', sans-serif;
+        margin-top: 200px;
     }
     .row1 {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        width: 50%;
     }
     .sm {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
         align-items: center;
+        margin-top: 20px;
+    }
+    .twitter > p {
+        margin-left: 22px;
+        margin-top: -19px;
+        margin-right: 10px;
+    }
+    .git > p {
+        margin-left: 22px;
+        margin-top: -19px;
+        margin-right: 10px;
+    }
+    .youtube > p {
+        margin-left: 22px;
+        margin-top: -20px;
+        margin-right: 10px;
+    }
+    .facebook > p {
+        margin-left: 18px;
+        margin-top: -19px;
+        margin-right: 10px;
+    }
+    .medium > p {
+        margin-left: 25px;
+        margin-top: -19px;
     }
     .grey {
-        color: silver;
+        color: #8D91A3;
+        font-size: 16px;
+        margin-top: 12px;
     }
     .grey > b {
         color: black;
     }
     .grey > b:hover {
         cursor: pointer;
+    }
+    .grey > img {
+        height: 24px;
+        width: 99px;
+        margin-bottom: 5px;
     }
     .row2 {
         display: flex;
@@ -107,8 +147,49 @@
     .col {
         display: flex;
         flex-direction: column;
+        margin-right: 50px;
+        align-items: center;
     }
     .col > h3 {
-        color: silver;
+        color: #8D91A3;
+        font-size: 16px;
+        margin-top: -100px;
+    }
+    .col > p {
+        color: #1B2448;
+        font-size: 16px;
+        margin-top: -1px;
+    }
+    .top {
+        margin-top: -160px;
+    }
+    .top > h2 {
+        font-size: 32px;
+        font-weight: bolder;
+        color: #1B2448;
+    }
+    .top > h4 {
+        font-size: 16px;
+        color: #FF6A3E;
+    }
+    .top > p {
+        font-size: 18px;
+        color: #1B2448;
+    }
+    .top > hr {
+        color: #8D91A3;
+        opacity: 0.2;
+    }
+    .content-wrapper {
+        height: 100%;
+        position: relative;
+    }
+    .content-wrapper,
+    .wrapper {
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 40px;
+        padding-left: 40px;
+        padding-bottom: 40px;
     }
 </style>
