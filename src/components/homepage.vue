@@ -300,6 +300,8 @@ h3 {
   top: 50%;
   left: 50%;
   height: 5px;
+  border-top-right-radius: 40%;
+  border-bottom-right-radius: 40%;
   background: linear-gradient(-45deg, #c15744, rgba(0, 0, 255, 0));
   filter: drop-shadow(0 0 6px #c15744);
   animation: tail 3000ms ease-in-out infinite, shooting 3000ms ease-in-out infinite;
