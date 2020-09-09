@@ -148,7 +148,6 @@
         display: flex;
         flex-direction: column;
         margin-right: 50px;
-        align-items: center;
     }
     .col > h3 {
         color: #8D91A3;
