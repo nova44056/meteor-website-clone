@@ -143,11 +143,12 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin-left: 30px;
     }
     .col {
         display: flex;
         flex-direction: column;
-        margin-right: 50px;
+        margin-right: 60px;
     }
     .col > h3 {
         color: #8D91A3;
@@ -163,7 +164,7 @@
         margin-top: -160px;
     }
     .top > h2 {
-        font-size: 32px;
+        font-size: 29px;
         font-weight: bolder;
         color: #1B2448;
     }
@@ -187,8 +188,8 @@
     .wrapper {
         margin-right: auto;
         margin-left: auto;
-        padding-right: 40px;
-        padding-left: 40px;
-        padding-bottom: 40px;
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-bottom: 30px;
     }
 </style>
