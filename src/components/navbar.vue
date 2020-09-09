@@ -54,7 +54,8 @@
     padding: 20px 40px;
 }
 .header > img {
-     width: 10%;
+     width: 5%;
+     margin-top: -3px;
 }
 .header-nav{
     display: flex;

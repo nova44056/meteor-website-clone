@@ -29,11 +29,10 @@ export default {
 </script>
 
 <style scoped>
-*{
+/* html{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+} */
 .navbar{
   padding-left: 10px;
   padding-right: 10px;

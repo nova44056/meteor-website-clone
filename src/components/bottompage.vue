@@ -3,8 +3,10 @@
 		<div class="section-4">
 			<div class="buildmeteor">
 				<div class="meteror-detail">
-					<h2>Build with</h2>
-					<h2>Meteor</h2>
+                    <div>
+                        <h2>Build with</h2>
+                        <h2>Meteor</h2>
+                    </div>
 					<img src="@/assets/Rectangle.svg" alt="" />
                     <p>PATHABLE</p>
                     <p>MAESTRO</p>
@@ -14,6 +16,22 @@
                     <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
                     <H4>VIEW MORE</H4>
 				</div>
+                <div class="pathable-wrapper">
+                    <img src="@/assets/pathable-logo.svg" alt="pathable-logo" class="pathable-logo">
+
+                    <div class="pathable-wrapper-bottom">
+                        <div class="pathable-wrapper-content">
+                            <h3>
+                                Mobile Events App & Conference Microsites
+                            </h3>
+                            <p> Pathable </p>
+                            <p>
+                                Pathable's platform produces white label mobile apps and websites for conferences, tradeshows and meetings for all types
+                            </p>
+                        </div>
+                        <img src="@/assets/Pathable-bg.jpg" alt="Pathable-bg" class="pathable-bg">
+                    </div>
+                </div>
 			</div>
 		</div>
 		<div class="section-5">
@@ -86,11 +104,46 @@
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300&display=swap");
+.pathable-wrapper-bottom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.pathable-bg{
+    width: 600px;
+    height: 400px;
+}
+.pathable-wrapper-content{
+    color:white;
+    margin: 2rem;
+}
+
+.pathable-logo{
+    height: 100px;
+    width: 100px;
+    margin: 3rem;
+}
+
+.pathable-wrapper{
+    background-color: #252B58;
+    border-radius: 2rem;
+}
+
+.fa{
+    font-size: x-large;
+}
+
 .section-4 {
 	display: flex;
-	padding: 30px 0px;
-	padding-left: 100px;
+    justify-content: center;
+	/* padding: 30px 0px;
+	padding-left: 100px; */
 }
+.meteror-detail{
+    width: 30rem;
+}
+
 .meteror-detail > h2 {
 	font-size: 40px;
 	font-weight: bold;
