@@ -1,70 +1,109 @@
 <template>
-  <div class="grid-container">
-      <div class="meteor-logo">
-        <img src="../assets/meteor-logo.svg">
-      </div>
-      <p class="div2">div2</p>
-      <p class="div3">div3</p>
-      <p class="div4">div4</p>
-      <p class="div5">div5</p>
-      <p class="div2">Developers</p>
-      <p class="div3">Hosting</p>
-      <p class="div4">Company</p>
-      <p class="div5">SIGN UP</p>
-  </div>
+    <div class="header">
+        <img src="https://d14jjfgstdxsoz.cloudfront.net/assets/meteor-logo.svg" alt="">
+        <div class="header-nav">
+            <div class="nav-developer">
+                <span>Developers</span>
+                <div class="nav-content" id="developer">
+                    <p>Install</p>
+                    <p>Why Meteor</p>
+                    <p>Tutorial</p>
+                    <p>Docs</p>
+                    <p>Package</p>
+                    <p>FAQ</p>
+                    <p>Forum</p>
+                    <p>Showcase</p>
+                </div>
+                </div>
+            <div class="nav-hosting">
+                <span>Hosting</span>
+                 <div class="nav-content" id="developer"> 
+                    <p>Pricing</p>
+                    <p>Why Galaxy</p>
+                    <p>Galaxy Docs</p>
+                 </div>
+                </div>
+            <div class="nav-company "> 
+                <span>Company</span>
+                <div class="nav-content" id="developer"> 
+                    <p>Culture</p>
+                    <p>Career</p>
+                    <p>Partner</p>
+                    <p>Blogs</p>
+                 </div>
+                </div>
+            <button class="sign-up">SIGN UP</button>
+        </div>
+    </div>
 </template>
 
 <script>
-export default {
-    
-}
+    export default {
+        
+
+    }
 </script>
 
 <style scoped>
-.div2{
-    grid-area: 1 / 6 / 2 / 7; 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Kumbh+Sans&display=swap');
+
+.header{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 20px 40px;
 }
-.div3{
-    grid-area: 1 / 7 / 2 / 8;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.header > img {
+     width: 10%;
 }
-.div4{
-    grid-area: 1 / 8 / 2 / 9;
+.header-nav{
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    width: 500px;
+    font-family: 'Inter';
 }
-.div5{
-     grid-area: 1 / 9 / 2 / 10;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.meteor-logo{
-    grid-area: 1 / 1 / 2 / 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 5px;
+.header-nav > div{
+    display: inline-block;
 }
 
-.meteor-logo img{
-    height: 25px;
+.nav-developer:hover #developer{
+    display: block;
+}
+.nav-hosting:hover #developer{
+    display: block;
+}
+.nav-company:hover #developer{
+    display: block;
+}
+button {
+    padding: 15px 30px;
+    background-color: #595dff;
+    color: white;
+    border: none;
+    font-weight: 900;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 15px;
 }
 
-.grid-container {
-    /* align-items: center; */
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px; 
-    padding-top: 10px;
-    padding-bottom: 10pxs;
+.nav-content {
+    display: none;
+    position: absolute;
+    padding: 5px 15px;
+    box-sizing: border-box;
+    line-height: 15px;
+    border-radius: 5px;
+    min-width: 120px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: #8d91a3;
+    box-shadow: 4px 4px 12px 0 rgba(27,36,72,.08), 1px 1px 3px 0 rgba(27,36,72,.16);
+}
+
+.nav-content > p:hover{
+    color: black;
+    cursor: pointer;
 }
 </style>
