@@ -39,7 +39,7 @@
                 <h2>Commercial Services</h2>
                 </div>
 			<div class="comser">
-				<div class="col img1">
+				<div class="col img1 into-view-bottom scroll-into-bottom delay--3">
                     <img src="@/assets/official5.svg" alt="">
                     <h2>Enterprise Support</h2>
                     <p>Confidently host your application on Galaxy</p>
@@ -49,7 +49,7 @@
                     <br>
                     <button>GET PAID SUPPORT</button>
                     </div>
-				<div class="col bg img2">
+				<div class="col bg img2 into-view-bottom scroll-into-bottom delay--4">
                     <img src="@/assets/effortless_2.svg" alt="">
                     <h2>Effortless Meteor Hosting</h2>
                     <p>Stop wasting time on devops. Deploy your</p>
@@ -58,7 +58,7 @@
                     <br>
                     <button>GET METEOR HOSTING</button>
                 </div>
-				<div class="col img3">
+				<div class="col img3 into-view-bottom scroll-into-bottom delay--5">
                     <img src="@/assets/global2.svg" alt="">
                     <h2>Global Partner Network</h2>
                     <p>Choose from hundreds of Official Meteor</p>
@@ -132,6 +132,41 @@
 
 .fa{
     font-size: x-large;
+}
+
+.into-view-bottom{
+	opacity: 0;
+	animation: slideFromBottom;
+	animation-duration: .4s;
+	animation-timing-function: ease-out;
+	animation-fill-mode: forwards
+}
+
+.scroll-into-bottom{
+	opacity: 0;
+}
+
+.delay--3{
+	animation-delay: .6s;
+}
+
+@keyframes slideFromBottom {
+ 0% {
+  opacity:0;
+  transform:translateY(20%)
+ }
+ to {
+  opacity:1;
+  transform:translateY(0)
+ }
+}
+
+.delay--4{
+    animation-delay: .8s;
+}
+
+.delay--5{
+    animation-delay: .10s;
 }
 
 .section-4 {
