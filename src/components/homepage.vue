@@ -31,8 +31,13 @@
                     <img src="../assets/MIXMAX.svg" alt="Qualcomm logo">
                     <img src="../assets/CODESIGNAL.svg" alt="Qualcomm logo">
                 </div>
-            </div>
         </div>
+
+        <div class="section-3">
+            Hi
+        </div>
+
+    </div>
 </template>
 
 <script>
@@ -42,6 +47,12 @@ export default {
 </script>
 
 <style scoped>
+.section-3{
+    background-image: radial-gradient(circle farthest-corner at 50% 0,rgba(239,240,249,.4),rgba(241,242,250,.4) 23%,rgba(245,245,251,.4) 41.25%,rgba(249,250,253,.4) 58.75%,rgba(253,253,254,.4) 77.5%,hsla(0,0%,100%,.4));
+    margin-top: 100px;
+}
+
+
 .logos-container{
     margin-top: 150px;
     display: flex;

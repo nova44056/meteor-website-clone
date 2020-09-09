@@ -100,6 +100,8 @@ button {
     font-family: 'Kumbh Sans', sans-serif;
     color: #8d91a3;
     box-shadow: 4px 4px 12px 0 rgba(27,36,72,.08), 1px 1px 3px 0 rgba(27,36,72,.16);
+    z-index: 1;
+    background-color: white;
 }
 
 .nav-content > p:hover{
