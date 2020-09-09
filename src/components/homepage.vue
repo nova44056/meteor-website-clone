@@ -120,6 +120,8 @@ export default {
   clip-path: circle(50% at 50% 50%);
   border-radius: 50%; */
   transform: rotateZ(45deg);
+  /* transform: scale(3); */
+  scale: 4;
 }
 
 .logos-container{
@@ -170,6 +172,7 @@ export default {
     align-items: center;
     color: white;
     flex-direction: column;
+    background-image: url('http://www.script-tutorials.com/demos/360/images/stars.png');
 }
 .meteor-animation{
     width: 100%;
