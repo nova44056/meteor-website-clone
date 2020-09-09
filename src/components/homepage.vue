@@ -12,12 +12,13 @@
                 </div>
                 <div class="text">
                     <h1>
-                        Javascript
+                        Build Javascript Applications Faster with Meteor
+
                     </h1>
-                    <h2>
+                    <div class="text-detail">
                         Meteor is an open source platform for web, mobile, and desktop used by over half a million developers around the globe to make shipping javascript applications simple, efficient, and scalable.
-                    </h2>
-                    <button>Get Started</button>
+                    </div>
+                    <button class="start">GET STARTED</button>
                 </div>
             </div>
         </div>
@@ -114,11 +115,11 @@ export default {
 }
 
 .sky-container {
-  /* width: 500px;
+   width: 500px;
   height: 500px;
-  background: linear-gradient(125deg, #00103a 0%, #3e5f77 100%);
+  /* background: linear-gradient(125deg, #00103a 0%, #3e5f77 100%); */
   clip-path: circle(50% at 50% 50%);
-  border-radius: 50%; */
+  border-radius: 50%; 
   transform: rotateZ(45deg);
 }
 
@@ -145,14 +146,22 @@ export default {
     position: absolute;
     display: flex;
     flex-direction: column;
+    padding: 0 60px;
     align-items: center;
     text-align: center;
 }
 .text h1{
-    font-size: 55px;
+    font-size: 50px;
 }
-.text h2{
-    width: 470px;
+.text-detail{
+    max-width: 800px;
+    box-sizing: border-box;
+    font-size: 25px;
+    line-height: 35px;
+    margin-bottom: 40px;
+    opacity: 0.8;
+    font-weight: bold;
+
 }
 .section-wrapper{
     display: flex;
@@ -164,7 +173,7 @@ export default {
     position: relative;
     border-radius: 2rem;
     background-color: #262B59;
-    width: 90%;
+    width: 95%;
     height: 35rem;
     justify-content: center;
     align-items: center;
@@ -176,6 +185,16 @@ export default {
     height: inherit;
 }
 
+.start{
+    border: none;
+    border-radius: 10px;
+    padding: 20px 40px;
+    color: white;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    background-color: #595dff;
+    font-weight: bold;
+}
 .integrate-partner{
     display: flex;
     justify-content: space-between
@@ -273,11 +292,12 @@ h3 {
     letter-spacing: -0.3px;
     font-family: 'Roboto';
 }
+
 .star {
   position: absolute;
   top: 50%;
   left: 50%;
-  height: 2px;
+  height: 5px;
   background: linear-gradient(-45deg, #c15744, rgba(0, 0, 255, 0));
   filter: drop-shadow(0 0 6px #c15744);
   animation: tail 3000ms ease-in-out infinite, shooting 3000ms ease-in-out infinite;
@@ -299,7 +319,7 @@ h3 {
   top: calc(50% - 200px);
   left: calc(50% - 300px);
   animation-delay: 650ms;
-}
+ }
 .star:nth-child(1)::before, .star:nth-child(1)::after {
   animation-delay: 650ms;
 }

@@ -87,6 +87,10 @@ button {
     font-size: 15px;
 }
 
+button:hover{
+    cursor: pointer;
+}
+
 .nav-content {
     display: none;
     position: absolute;
@@ -104,6 +108,9 @@ button {
     background-color: white;
 }
 
+.header-nav > div:hover{
+    cursor: pointer;
+}
 .nav-content > p:hover{
     color: black;
     cursor: pointer;
