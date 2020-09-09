@@ -1,11 +1,14 @@
 <template>
 	<div class="finalpart">
+        <br>
+        <br>
+        <br>
 		<div class="section-4">
 			<div class="buildmeteor">
 				<div class="meteror-detail">
-                    <div>
+                    <div class="font">
                         <h2>Build with</h2>
-                        <h2>Meteor</h2>
+                        <h2 style="margin-top: -30px">Meteor</h2>
                     </div>
 					<img src="@/assets/Rectangle.svg" alt="" />
                     <p>PATHABLE</p>
@@ -34,9 +37,12 @@
                 </div>
 			</div>
 		</div>
+        <br>
+        <br>
 		<div class="section-5">
 			<div class="center">
                 <h2>Commercial Services</h2>
+                <br>
                 </div>
 			<div class="comser">
 				<div class="col img1 into-view-bottom scroll-into-bottom delay--3">
@@ -179,25 +185,37 @@
     width: 30rem;
 }
 
-.meteror-detail > h2 {
+/* .meteror-detail > h2 {
 	font-size: 40px;
 	font-weight: bold;
 	line-height: 0px;
 	font-family: "Playfair Display", serif;
 	font-family: "Roboto", sans-serif;
 	letter-spacing: 2px;
-}
+} */
 .meteror-detail > p {
     font-size: 16px;
     font-family: "inter", sans-serif;
     color: #8D91A3;
+}
+.meteror-detail > p:hover {
+    color: #FF6A3E;
+    cursor: pointer;
+    font-weight: bold;
 }
 .meteror-detail > h4 {
     font-size: 16px;
     color: #1B2448;
     font-family: "inter", sans-serif;
     margin-left: 25px;
-    margin-top: -19px;
+    margin-top: -22px;
+}
+.font {
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: #1B2448;
+    margin-bottom: -30px;
 }
 .buildmeteor {
 	width: 60%;

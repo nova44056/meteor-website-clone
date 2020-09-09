@@ -24,14 +24,14 @@
         <!-- fading logo section  -->
         <div class="section-2">
             <h1>Companies using meteor</h1>
-                <div class="logos-container logos-container__row-1 logos-container__row--animated">
+                <div class="logos-container logos-container__row-1 logos-container__row--animated quickfix">
                     <img src="../assets/QUALCOMM.svg" alt="Qualcomm logo">
                     <img src="../assets/MAZDA.svg" alt="Qualcomm logo">
                     <img src="../assets/IKEA.svg" alt="Qualcomm logo">
                     <img src="../assets/HONEYWELL.svg" alt="Qualcomm logo">
                 </div>
 
-                <div class="logos-container logos-container__row-2 logos-container__row--animated">
+                <div class="logos-container logos-container__row-2 logos-container__row--animated quickfix">
                     <img src="../assets/DISPATCH.svg" alt="Dispatch logo">
                     <img src="../assets/ROCKET-CHAT.svg" alt="Qualcomm logo">
                     <img src="../assets/MIXMAX.svg" alt="Qualcomm logo">
@@ -361,7 +361,9 @@ h3 {
 .star:nth-child(5)::before, .star:nth-child(5)::after {
   animation-delay: 2100ms;
 }
-
+.quickfix {
+  margin-top: 70px;
+}
 
 
 
