@@ -3,10 +3,10 @@
       <div class="meteor-logo">
         <img src="../assets/meteor-logo.svg">
       </div>
-      <p class="div2">div2</p>
-      <p class="div3">div3</p>
-      <p class="div4">div4</p>
-      <p class="div5">div5</p>
+      <p class="div2">Developers</p>
+      <p class="div3">Hosting</p>
+      <p class="div4">Company</p>
+      <p class="div5">SIGN UP</p>
   </div>
 </template>
 
