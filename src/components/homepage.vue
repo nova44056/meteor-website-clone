@@ -12,7 +12,7 @@
                 </div>
                 <div class="text">
                     <h1>
-                        Javascript
+                        Build Javascript Applications Faster with Meteor 
                     </h1>
                     <h2>
                         Meteor is an open source platform for web, mobile, and desktop used by over half a million developers around the globe to make shipping javascript applications simple, efficient, and scalable.

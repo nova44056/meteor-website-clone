@@ -5,7 +5,10 @@
                 <h2>Join our newsletter</h2>
                 <p>Sign up to receive a monthly email on the latest Meteor</p>
                 <p>updates, features, and news!</p>
-                <h4>SUBSCRIBE NOW ></h4>
+                <div class="subscribe-now">
+                    <h4>SUBSCRIBE NOW </h4>
+                    <h4> ></h4>
+                </div>
                 <br>
                 <hr>
                 <br>
@@ -14,7 +17,7 @@
                 <img src="https://d14jjfgstdxsoz.cloudfront.net/assets/meteor-logo.svg" alt="">
                 <br>
                 <p>© 2020 Meteor Software</p>
-                <p>Open source downloads supported by <b style="color: #1b2448">KeyCDN</b> and <b style="color: #1b2448">StackPath</b></p>
+                <p>Open source downloads supported by <b class="bold">KeyCDN</b> and <b class="bold">StackPath</b></p>
                 <div class="sm">
                     <div class="twitter">
                         <i class="fa fa-twitter" aria-hidden="true"></i>
@@ -78,6 +81,15 @@
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300&display=swap');
+    .bold{
+        color: #1b2448;
+        width: max-content;
+    }
+
+    .bold:hover{
+        border-bottom: 2px solid #F85C4C;
+        cursor: pointer;
+    }
 
     .footer{
         margin-top: 100px;
@@ -123,6 +135,7 @@
         margin-left: 25px;
         margin-top: -19px;
     }
+
     .grey {
         color: #8D91A3;
         font-size: 16px;
@@ -159,6 +172,11 @@
         color: #1B2448;
         font-size: 16px;
         margin-top: -1px;
+        width: max-content;
+    }
+    .col > p:hover{
+        border-bottom: 2px solid #F85C4C;
+        cursor: pointer;
     }
     .top {
         margin-top: -160px;
@@ -168,10 +186,21 @@
         font-weight: bolder;
         color: #1B2448;
     }
-    .top > h4 {
+    .subscribe-now {
+        display: flex;
         font-size: 16px;
         color: #FF6A3E;
     }
+    .subscribe-now h4{
+        margin-right: 5px;
+    }
+
+    .subscribe-now h4:hover{
+        cursor: pointer;
+        margin-right: 10px;
+        transition: ease .5s;
+    }
+
     .top > p {
         font-size: 18px;
         color: #1B2448;
