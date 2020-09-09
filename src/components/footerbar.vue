@@ -178,7 +178,8 @@ export default {};
 	width: max-content;
 }
 .col > p:hover {
-	border-bottom: 2px solid #f85c4c;
+    box-shadow: 0 5px 0 -2px #f85c4c;
+	/* border-bottom: 2px solid #f85c4c; */
 	cursor: pointer;
 }
 .top {
