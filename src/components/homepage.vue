@@ -3,7 +3,13 @@
         <!-- Javascript section -->
         <div class="section-wrapper">
             <div class="section">
-                <img src="../assets/meteor_animation.svg" alt="meteor-animation" class="meteor-animation">
+                <div class="sky-container">
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                </div>
                 <div class="text">
                     <h1>
                         Javascript
@@ -107,6 +113,14 @@ export default {
     margin-top: 100px;
 }
 
+.sky-container {
+  /* width: 500px;
+  height: 500px;
+  background: linear-gradient(125deg, #00103a 0%, #3e5f77 100%);
+  clip-path: circle(50% at 50% 50%);
+  border-radius: 50%; */
+  transform: rotateZ(45deg);
+}
 
 .logos-container{
     margin-top: 150px;
@@ -145,6 +159,7 @@ export default {
     justify-content: center;
 }
 .section{
+    overflow: hidden;
     display: flex;
     position: relative;
     border-radius: 2rem;
@@ -257,5 +272,110 @@ h3 {
     font-weight: 900;
     letter-spacing: -0.3px;
     font-family: 'Roboto';
+}
+.star {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 2px;
+  background: linear-gradient(-45deg, #c15744, rgba(0, 0, 255, 0));
+  filter: drop-shadow(0 0 6px #c15744);
+  animation: tail 3000ms ease-in-out infinite, shooting 3000ms ease-in-out infinite;
+}
+
+.star::before, .star::after {
+  position: absolute;
+  content: '';
+  top: calc(50% - 1px);
+  right: 0;
+  height: 2px;
+  background: linear-gradient(-45deg, rgba(0, 0, 255, 0), #c15744, rgba(0, 0, 255, 0));
+  border-radius: 100%;
+  animation: shining 3000ms ease-in-out infinite;
+}
+
+
+.star:nth-child(1) {
+  top: calc(50% - 200px);
+  left: calc(50% - 300px);
+  animation-delay: 650ms;
+}
+.star:nth-child(1)::before, .star:nth-child(1)::after {
+  animation-delay: 650ms;
+}
+
+.star:nth-child(2) {
+  top: calc(50% - -50px);
+  left: calc(50% - 190px);
+  animation-delay: 150ms;
+}
+.star:nth-child(2)::before, .star:nth-child(2)::after {
+  animation-delay: 150ms;
+}
+
+.star:nth-child(3) {
+  top: calc(50% - -90px);
+  left: calc(50% - 200px);
+  animation-delay: 1600ms;
+}
+.star:nth-child(3)::before, .star:nth-child(3)::after {
+  animation-delay: 1600ms;
+}
+
+.star:nth-child(4) {
+  top: calc(50% - 50px);
+  left: calc(50% - 250px);
+  animation-delay: 4700ms;
+}
+.star:nth-child(4)::before, .star:nth-child(4)::after {
+  animation-delay: 4700ms;
+}
+
+.star:nth-child(5) {
+  top: calc(50% - -190px);
+  left: calc(50% - 200px);
+  animation-delay: 2100ms;
+}
+.star:nth-child(5)::before, .star:nth-child(5)::after {
+  animation-delay: 2100ms;
+}
+
+
+
+
+/* Animations */
+@keyframes tail {
+  0% {
+    width: 0;
+  }
+  
+  30% {
+    width: 100px;
+  }
+  
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes shining {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 30px;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes shooting {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(320px);
+  }
 }
 </style>
