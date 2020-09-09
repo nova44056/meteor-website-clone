@@ -5,6 +5,7 @@
     </div>
     <div class="homepage">
       <homepage/>
+      <bottompage/>
     </div>
     <div>
       <footerbar/>
@@ -16,11 +17,13 @@
 import navbar from './components/navbar'
 import homepage from './components/homepage'
 import footerbar from './components/footerbar'
+import bottompage from './components/bottompage'
 export default {
   components: {
     navbar,
     homepage,
-    footerbar
+    footerbar,
+    bottompage
   }
 }
 </script>
