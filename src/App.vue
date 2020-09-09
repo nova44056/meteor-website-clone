@@ -6,16 +6,21 @@
     <div class="homepage">
       <homepage/>
     </div>
+    <div>
+      <footerbar/>
+    </div>
   </div>
 </template>
 
 <script>
 import navbar from './components/navbar'
 import homepage from './components/homepage'
+import footerbar from './components/footerbar'
 export default {
   components: {
     navbar,
-    homepage
+    homepage,
+    footerbar
   }
 }
 </script>
