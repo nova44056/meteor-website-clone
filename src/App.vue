@@ -3,14 +3,19 @@
     <div class="navbar">
       <navbar/>
     </div>
+    <div class="homepage">
+      <homepage/>
+    </div>
   </div>
 </template>
 
 <script>
 import navbar from './components/navbar'
+import homepage from './components/homepage'
 export default {
   components: {
-    navbar
+    navbar,
+    homepage
   }
 }
 </script>
@@ -26,5 +31,9 @@ export default {
   padding-right: 10px;
   display: flex;
   justify-content: center;
+}
+.homepage{
+  height: 100%;
+  width:100%;
 }
 </style>
