@@ -126,6 +126,7 @@ export default {};
   border-radius: 50%;
   transform: rotateZ(45deg);
   /* transform: scale(3); */
+  scale: 4;
   zoom: 4;
 }
 
