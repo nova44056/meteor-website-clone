@@ -106,6 +106,7 @@ export default {};
 	flex-direction: column;
 	justify-content: center;
 	width: 35%; 
+	margin-left: 35px;
 }
 .sm {
 	display: flex;
@@ -228,90 +229,3 @@ export default {};
 }
 </style>
 
-    .grey {
-        color: #8D91A3;
-        font-size: 16px;
-        margin-top: 12px;
-    }
-    .grey > b {
-        color: black;
-    }
-    .grey > b:hover {
-        cursor: pointer;
-    }
-    .grey > img {
-        height: 24px;
-        width: 99px;
-        margin-bottom: 5px;
-    }
-    .row2 {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-left: 30px;
-    }
-    .col {
-        display: flex;
-        flex-direction: column;
-        margin-right: 60px;
-    }
-    .col > h3 {
-        color: #8D91A3;
-        font-size: 16px;
-        margin-top: -100px;
-    }
-    .col > p {
-        color: #1B2448;
-        font-size: 16px;
-        margin-top: -1px;
-        width: max-content;
-    }
-    .col > p:hover{
-        box-shadow: 0 5px 0 -2px #F85C4C;
-        /* box-shadow: 0px 0px 0px 1px #F85C4C; */
-        cursor: pointer;
-    }
-    .top {
-        margin-top: -160px;
-    }
-    .top > h2 {
-        font-size: 29px;
-        font-weight: bolder;
-        color: #1B2448;
-    }
-    .subscribe-now {
-        display: flex;
-        font-size: 16px;
-        color: #FF6A3E;
-    }
-    .subscribe-now h4{
-        margin-right: 5px;
-    }
-
-    .subscribe-now h4:hover{
-        cursor: pointer;
-        margin-right: 10px;
-        transition: ease .5s;
-    }
-
-    .top > p {
-        font-size: 18px;
-        color: #1B2448;
-    }
-    .top > hr {
-        color: #8D91A3;
-        opacity: 0.1;
-    }
-    .content-wrapper {
-        height: 100%;
-        position: relative;
-    }
-    .content-wrapper,
-    .wrapper {
-        margin-right: 10%;
-        margin-left: 10%;
-        padding-right: 50px;
-        padding-left: 50px;
-        padding-bottom: 30px;
-    }
-</style>
