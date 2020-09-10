@@ -123,6 +123,8 @@
 .pathable-wrapper-content{
     color:white;
     margin: 2rem;
+    width: 15rem;
+    font-family: "inter";
 }
 
 .pathable-logo{
@@ -201,7 +203,9 @@
 .meteror-detail > p:hover {
     color: #FF6A3E;
     cursor: pointer;
-    font-weight: bold;
+    transition: ease-in .3s;
+    font-size: 18px;
+    /* font-weight: bold; */
 }
 .meteror-detail > h4 {
     font-size: 16px;
