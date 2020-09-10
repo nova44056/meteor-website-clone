@@ -261,6 +261,7 @@ export default {};
 .whyMeteor {
   width: 60%;
   display: flex;
+  padding-left: 300px;
 }
 
 .meteror-detail {
@@ -281,11 +282,13 @@ export default {};
   margin-bottom: 40px;
 }
 .meteror-img > img {
-  height: 100%;
-  width: 100%;
-  margin-right: -100px;
+  height: 736px;
+  width: 837px;
 }
-
+.meteror-img{
+  margin-right: 200px;
+  margin-top: 50px;
+}
 h3 {
   font-size: 30px;
   font-weight: bold;
@@ -396,7 +399,7 @@ h3 {
   animation-delay: 2100ms;
 }
 .quickfix {
-  margin-top: 70px;
+  margin-top: 40px;
 }
 
 /* Animations */
