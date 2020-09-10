@@ -251,6 +251,12 @@
     width: 388px;
     font-family: "inter", sans-serif;
 }
+
+.col:hover{
+    cursor: pointer;
+    box-shadow: 0 1px 3px 0 rgba(27,36,72,.16);
+}
+
 .bg {
     background-color: #1B2448;
     color: #FFFFFF;
