@@ -109,6 +109,7 @@ button:hover {
     1px 1px 3px 0 rgba(27, 36, 72, 0.16);
   z-index: 1;
   background-color: white;
+  margin-top: 10px;
 }
 
 .header-nav > div:hover {
