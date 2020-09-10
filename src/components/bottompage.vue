@@ -211,6 +211,13 @@
     margin-top: -22px;
 }
 
+.meteror-detail > h4:hover{
+    cursor: pointer;
+}
+
+.meteror-detail > i:hover{
+    cursor: pointer;
+}
 
 .font {
     font-size: 24px;
