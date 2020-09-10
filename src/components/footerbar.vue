@@ -105,7 +105,7 @@ export default {};
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	width: 50%;
+	width: 35%; 
 }
 .sm {
 	display: flex;
@@ -159,7 +159,7 @@ export default {};
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	margin-left: 30px;
+	margin-left: 90px;
 }
 .col {
 	display: flex;
@@ -212,7 +212,7 @@ export default {};
 }
 .top > hr {
 	color: #8d91a3;
-	opacity: 0.2;
+	opacity: 0.1;
 }
 .content-wrapper {
 	height: 100%;
@@ -220,8 +220,8 @@ export default {};
 }
 .content-wrapper,
 .wrapper {
-	margin-right: auto;
-	margin-left: auto;
+	margin-right: 10%;
+	margin-left: 10%;
 	padding-right: 30px;
 	padding-left: 30px;
 	padding-bottom: 30px;
@@ -300,7 +300,7 @@ export default {};
     }
     .top > hr {
         color: #8D91A3;
-        opacity: 0.2;
+        opacity: 0.1;
     }
     .content-wrapper {
         height: 100%;
@@ -308,10 +308,10 @@ export default {};
     }
     .content-wrapper,
     .wrapper {
-        margin-right: auto;
-        margin-left: auto;
-        padding-right: 30px;
-        padding-left: 30px;
+        margin-right: 10%;
+        margin-left: 10%;
+        padding-right: 50px;
+        padding-left: 50px;
         padding-bottom: 30px;
     }
 </style>
