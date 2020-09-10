@@ -90,6 +90,7 @@ button {
 
 button:hover{
     cursor: pointer;
+    background-color: #4F53DF;
 }
 
 .nav-content {

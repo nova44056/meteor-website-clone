@@ -210,6 +210,8 @@
     margin-left: 25px;
     margin-top: -22px;
 }
+
+
 .font {
     font-size: 24px;
     font-family: "Roboto", sans-serif;
