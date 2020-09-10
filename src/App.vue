@@ -1,31 +1,31 @@
 <template>
   <div id="app">
     <div class="navbar">
-      <navbar/>
+      <navbar />
     </div>
     <div class="homepage">
-      <homepage/>
-      <bottompage/>
+      <homepage />
+      <bottompage />
     </div>
     <div>
-      <footerbar/>
+      <footerbar />
     </div>
   </div>
 </template>
 
 <script>
-import navbar from './components/navbar'
-import homepage from './components/homepage'
-import footerbar from './components/footerbar'
-import bottompage from './components/bottompage'
+import navbar from "./components/navbar";
+import homepage from "./components/homepage";
+import footerbar from "./components/footerbar";
+import bottompage from "./components/bottompage";
 export default {
   components: {
     navbar,
     homepage,
     footerbar,
-    bottompage
-  }
-}
+    bottompage,
+  },
+};
 </script>
 
 <style scoped>
@@ -33,13 +33,12 @@ export default {
   margin: 0;
   padding: 0;
 } */
-.navbar{
+.navbar {
   padding-left: 10px;
   padding-right: 10px;
-  
 }
-.homepage{
+.homepage {
   height: 100%;
-  width:100%;
+  width: 100%;
 }
 </style>

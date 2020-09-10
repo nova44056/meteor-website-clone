@@ -98,7 +98,7 @@ export default {};
 	display: flex;
 	justify-content: space-around;
 	flex-direction: row;
-	font-family: "Inter", sans-serif;
+	font-family: "inter", sans-serif;
 	margin-top: 200px;
 }
 .row1 {
@@ -184,6 +184,7 @@ export default {};
 }
 .top {
 	margin-top: -160px;
+	font-family: "inter";
 }
 .top > h2 {
 	font-size: 29px;
